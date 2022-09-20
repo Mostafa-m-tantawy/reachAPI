@@ -38,6 +38,6 @@ Route::post('/categories/destroy/{category}',[CategoryController::class,'destroy
 
 Route::get('/advertisements',[AdvertisementController::class,'index']);
 Route::post('/advertisements',[AdvertisementController::class,'store']);
-Route::get('/advertisements/show/{category}',[AdvertisementController::class,'show']);
-Route::post('/advertisements/update/{category}',[AdvertisementController::class,'update']);
-Route::post('/advertisements/destroy/{category}',[AdvertisementController::class,'destroy']);
+Route::get('/advertisements/show/{advertisement}',[AdvertisementController::class,'show']);
+Route::post('/advertisements/update/{advertisement}',[AdvertisementController::class,'update']);
+Route::post('/advertisements/destroy/{advertisement}',[AdvertisementController::class,'destroy']);
